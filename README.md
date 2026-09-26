@@ -14,8 +14,6 @@ Diseño de una red de nodos de monitoreo hídrico en Sabana Centro con MQTT y su
 | [`capturas/`](capturas/) | Evidencia de la validación, enlazada desde la Wiki |
 | [`variante-pablo/dolordedientes-mqtt.pkt`](variante-pablo/dolordedientes-mqtt.pkt) | Variante con MCU y sensores IoT de Packet Tracer (autor: Pablo Tamayo); no ejecutada para esta entrega |
 | [`docs/GUIA_PACKET_TRACER.md`](docs/GUIA_PACKET_TRACER.md) | Cómo reconstruir la topología y repetir las pruebas |
-| [`docs/GUION_VIDEO.md`](docs/GUION_VIDEO.md) | Guion del video de 5 minutos |
-| [`scripts/`](scripts/) | Scripts de Python alternativos a la aplicación *MQTT Client* (no usados en la validación) |
 
 Los datos de los nodos son simulados y cada mensaje lo declara con `"origen":"simulado"`.
 
