@@ -132,8 +132,7 @@ En el Servidor-Web: *Services* → *HTTP* activado; `index.html` con una página
 | P5 | Telemetría de los dos municipios | Mensajes de Chía y Cajicá en la Plataforma | `07b-telemetria-dos-municipios-a.png`, `-b.png`, `05c-plataforma-event-log.png` |
 | P6 | Alerta con QoS 1 | PUBLISH y PUBACK | `08-alerta-qos1-a.png`, `-b.png`, `-c.png` |
 | P7 | Orden de desactivar la alarma | PUBLISH de la Plataforma, PUBACK y recepción en chia-01 | `10-orden-desactivar-a.png`, `-b.png` |
-| P8 | Estado y LWT | No aplica en Packet Tracer 9 (sin LWT) | — |
-| P9 | Acceso del usuario | Página del Servidor-Web en el navegador | `11-http-usuario.png` |
+| P8 | Acceso del usuario | Página del Servidor-Web en el navegador | `11-http-usuario.png` |
 
 En el modo *Simulation*, filtrar por los protocolos de interés (ICMP, TCP, DHCP, HTTP) y avanzar con *Capture/Forward*.
 
@@ -142,7 +141,6 @@ En el modo *Simulation*, filtrar por los protocolos de interés (ICMP, TCP, DHCP
 | Elemento | Diseño real | Simulación |
 | :--- | :--- | :--- |
 | Gateway del municipio | SBC con broker local que reenvía `sabana/{municipio}/#` al broker de la nube | Router inalámbrico WRT300N con NAT |
-| Estado de conexión | LWT `offline` y `online` retenidos en `.../estado` | No simulado: la aplicación no permite LWT |
 | Seguridad de MQTT | TLS en el puerto 8883 y credenciales por nodo | Puerto 1883; credenciales visibles en texto plano en el CONNECT |
 | Red de la nube | Servidor cableado o servicio en la nube | Punto de acceso sin autenticación, por la limitación de la SBC-PT |
 | Datos | Mediciones de los sensores | Valores escritos a mano, marcados `"origen":"simulado"` |
@@ -166,13 +164,10 @@ En [`capturas/`](../capturas/):
 | `03-ping-nodo-broker.png` | P1 | Tomada |
 | `04-broker-config.png` | Aplicación del broker con los usuarios | Tomada |
 | `05-connect-connack.png` | P2, registro de la Plataforma | Tomada |
-| `05b-simulacion-mqtt.png` | P2 en el modo Simulation | No tomada |
 | `05c-plataforma-event-log.png` | Registro completo de la Plataforma (P3, P5, P6, P7 y `"will":{}`) | Tomada |
 | `06-subscribe.png` | P3 | Tomada |
 | `07-publish-telemetria-a.png` / `-b.png` | P4: publicación en chia-01 / mensaje en la Plataforma | Tomadas |
 | `07b-telemetria-dos-municipios-a.png` / `-b.png` | P5: registro de la Plataforma / publicación en cajica-01 | Tomadas |
 | `08-alerta-qos1-a.png` / `-b.png` / `-c.png` | P6: publicación / registro de chia-01 con PUBACK / mensaje en la Plataforma | Tomadas |
 | `10-orden-desactivar-a.png` / `-b.png` | P7: publicación en la Plataforma / suscripción de chia-01 | Tomadas |
-| `10c` | P7: recepción de la orden en el registro de chia-01 | No tomada |
 | `11-http-usuario.png` | P9 | Tomada |
-| Fallas 1 a 3, antes y después | Troubleshooting | No tomadas |
