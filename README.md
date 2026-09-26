@@ -22,5 +22,5 @@ Los datos de los nodos son simulados y cada mensaje lo declara con `"origen":"si
 | Integrante | GitHub |
 | :--- | :--- |
 | María José Almanza Caviedes | [@Majo7-613](https://github.com/Majo7-613) |
-| Pablo Andrés Tamayo González | [ItsN3M3515] (https://github.com/ItsN3M3515) |
-| Simón Martínez García | [simonmartinezunisabana] (https://github.com/simonmartinezunisabana) |
+| Pablo Andrés Tamayo González | [@ItsN3M3515] (https://github.com/ItsN3M3515) |
+| Simón Martínez García | [@simonmartinezunisabana] (https://github.com/simonmartinezunisabana) |
